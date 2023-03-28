@@ -24,3 +24,9 @@ Replacing '<string:etb_id>' with an establishment's id allows to get all the emi
 ### Front-end:
 Using basic .JS and .html I created a web page that shows an interactive MapboxGL map on the left side and a chart on the right showing the details of emmissions
 ![Alt text](./supports/images/front.jpg )
+
+
+## Road-map :
+- Not all the points have details about their emissions it would be nice to be able to distinguish them
+- For now there's only one year of details data available (2020), I'll add other years so that users may follow and assess the evolutions of the phenomenom
+- Once I added multi-years database, I may allow the user to chose betwen an array view (with a year drop-down selector) and a stacked bar chart view (based on ChartJS) to synthetically analyse the data.
