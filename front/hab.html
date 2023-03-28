@@ -1,0 +1,43 @@
+<!-- templates/maps.html -->
+<!DOCTYPE html>
+<html style="width:100% ; height:100%" lang="fr">
+
+<head>
+    <title>MA CARTE</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"
+        integrity="sha512-TW5s0IT/IppJtu76UbysrBH9Hy/5X41OTAbQuffZFU6lQ1rdcLHzpU5BzVvr/YFykoiMYZVWlr/PX1mDcfM9Qg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.2.1/d3.min.js"
+        integrity="sha512-wkduu4oQG74ySorPiSRStC0Zl8rQfjr/Ty6dMvYTmjZw6RS5bferdx8TR7ynxeh79ySEp/benIFFisKofMjPbg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css" rel='stylesheet'>
+    <script type="text/javascript" src="js/map.js" defer></script>
+    <link href="styles/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body style = "width:100% ; height:100%" >
+    <div style="display:block; width:100%; height:98%;">
+        <div id = "map" style="width:50vw; height:98vh; float: left; display: inline-block;"></div>
+        <div id = "data" style="width:50vw; height:98vh; float: left; display: inline-block;">
+            <table id="emissionTable" >
+                <tr>
+                  <th>Année d'émission</th>
+                  <th>Identifiant</th>
+                  <th>Milieu</th>
+                  <th>Nom de l'établissement</th>
+                  <th>Polluant</th>
+                  <th>Quantité</th>
+                  <th>Unité</th>
+                </tr>
+              </table>
+              <div id="dispoDiv" style = "letter-spacing: 1px;
+              font-family: sans-serif;
+              font-size: 0.8rem;
+              text-align:center;"></div>
+      </div>
+      </div>
+</body>
+</html>
